@@ -91,13 +91,6 @@
         als 'vim' "nvim -u ~/.config/nvim/init.vim"
     fi
 
-### helper function
-    vi() {
-        local abspath=$(realpath "$1")
-        cmd="nvim -u ~/.config/nvim/init.vim $abspath"
-        history -s "$cmd"
-        eval $cmd
-    }
 
 
 
